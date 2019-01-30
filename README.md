@@ -19,4 +19,4 @@ How to use:
 1. Click the <img src="inc/img/sh.png" alt="shell" height="15" width="15"> icon next to a script.
 1. Paste the command into a terminal and execute it
 
-CAUTION: Currently all commands are generated to be executed with 'sudo bash' - in a future release, I will add a second buttons.
+CAUTION: Currently all commands are generated to be executed with 'sudo bash' - in a future release, I will add a second button.
