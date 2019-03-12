@@ -14,6 +14,7 @@ $TABLE = '
 	<th><input type="text" id="name" onkeyup="filter()" placeholder="filter"></th>
 	<th><input type="text" id="comment" onkeyup="filter()" placeholder="filter"></th>
 	<th></th>
+	<th style="font-size: 0.75em;">su</th>
 </tr>
 ';
 
