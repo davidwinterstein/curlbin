@@ -32,9 +32,16 @@ foreach ($FILES as $FILE) {
 		' . $DESCRIPTION . '
 	</td>
 	<td>
-		<button class="clip" onclick="clipboard(\'' . $RESULTS . '\')">
+		<button class="clip" onclick="clipboard(\'' . $RESULTS . '\',false)">
 			<img src="inc/img/sh.png">
-			<div class="copy"><textarea id="copy_' . $RESULTS . '">curl -s ' . $PROTO . '://' . $DOMAIN . $URI . $FILENAME . ' |sudo bash</textarea></div>
+			<div class="copy"><textarea id="copy_' . $RESULTS . '_nosu">curl -s ' . $PROTO . '://' . $DOMAIN . $URI . $FILENAME . ' |bash</textarea></div>
+			<span class="tooltip">curl -s ' . $PROTO . '://' . $DOMAIN . $URI . $FILENAME . ' |bash</span>
+		</button>
+	</td>
+	<td>
+		<button class="clip" onclick="clipboard(\'' . $RESULTS . '\',true)">
+			<img src="inc/img/rsh.png">
+			<div class="copy"><textarea id="copy_' . $RESULTS . '_sudo">curl -s ' . $PROTO . '://' . $DOMAIN . $URI . $FILENAME . ' |sudo bash</textarea></div>
 			<span class="tooltip">curl -s ' . $PROTO . '://' . $DOMAIN . $URI . $FILENAME . ' |sudo bash</span>
 		</button>
 	</td>

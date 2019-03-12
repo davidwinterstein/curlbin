@@ -1,6 +1,11 @@
-function clipboard(copyid) {
+function clipboard(copyid,sudo) {
 	var id = 'copy_' + copyid;
-	var copy = document.getElementById(id);
+	if (sudo === false) {
+		var mod = 'nosu';
+	} else {
+		var mod = 'sudo';
+	}
+	var copy = document.getElementById(id + '_' + mod);
 	var success = document.getElementById("success");
 
 	copy.select();
