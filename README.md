@@ -16,7 +16,5 @@ Scripts are linked to their raw versions, so they can be viewed in the browser.\
 How to use:
 1. Download the repository contents to your web server.
 1. Put your scripts in the [`scripts`](scripts/) folder.
-1. Click the <img src="inc/img/sh.png" alt="shell" height="15" width="15"> icon next to a script.
-1. Paste the command into a terminal and execute it
-
-CAUTION: Currently all commands are generated to be executed with 'sudo bash' - in a future release, I will add a second button.
+1. Click the <img src="inc/img/sh.png" alt="shell" height="15" width="15"> icon or the <img src="inc/img/rsh.png" alt="shell" height="15" width="15"> icon (for sudo usage) next to a script.
+1. Paste the command into a terminal and execute it.
